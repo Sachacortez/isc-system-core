@@ -27,9 +27,7 @@ const knexConfig: { [key: string]: import('knex').Knex.Config } = {
       database: database.name,
       user: database.user,
       password: database.password,
-      ssl: {
-        rejectUnauthorized: false,
-      },
+      ssl: false,
     },
     pool: {
       min: 2,
@@ -46,9 +44,7 @@ const knexConfig: { [key: string]: import('knex').Knex.Config } = {
       database: database.name,
       user: database.user,
       password: database.password,
-      ssl: {
-        rejectUnauthorized: true,
-      },
+      ssl: false,
     },
     pool: {
       min: 2,
